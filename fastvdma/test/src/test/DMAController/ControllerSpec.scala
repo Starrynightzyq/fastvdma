@@ -14,9 +14,12 @@ SPDX-License-Identifier: Apache-2.0
 
 package DMAController
 
-import org.scalatest.{FlatSpec, Matchers}
+// import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest._
+import flatspec.AnyFlatSpec
+import matchers.should._
 
-class ControllerSpec extends FlatSpec with Matchers{
+class ControllerSpec extends AnyFlatSpec with Matchers{
   behavior of "ControllerSpec"
   val dma_config = System.getenv("DMACONFIG")
   dma_config match {

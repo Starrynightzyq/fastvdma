@@ -16,9 +16,12 @@ package DMAController
 
 import DMAController.Frontend._
 import DMAController.Worker.{AddressGenerator, AddressGeneratorTest, InterruptController, InterruptControllerTest, TransferSplitter, TransferSplitterTest}
-import org.scalatest.{FlatSpec, Matchers}
+// import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest._
+import flatspec.AnyFlatSpec
+import matchers.should._
 
-class ComponentSpec extends FlatSpec with Matchers{
+class ComponentSpec extends AnyFlatSpec with Matchers{
   behavior of "ComponentSpec"
 
   it should "generate addresses" in {

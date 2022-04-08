@@ -345,3 +345,17 @@ hs_err_pid*
 
 *.rgba
 out.png
+
+# mill
+build/
+out/
+mill
+
+# metals
+.metals/
+.vscode/
+
+# nfs
+.nfs*
+
+backup/
